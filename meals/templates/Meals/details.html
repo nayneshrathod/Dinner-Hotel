@@ -1,0 +1,24 @@
+{% extends 'Base.html' %}
+{% block content %}
+
+<!--<div class="card" style="width: 18rem;">-->
+<!--    <img alt="Card image cap" class="card-img-top" src="{{meals_details.image.url}}">-->
+<!--    <div class="card-body">-->
+<!--        <h5 class="card-title">{{meals_details.name}}</h5>-->
+<!--        <p class="card-text">{{meals_details.description}}</p>-->
+<!--        <p class="card-text">{{meals_details.people}}</p>-->
+<!--        <p class="card-text">{{meals_details.price}}</p>-->
+<!--        <p class="card-text">{{meals_details.preperation_time}}</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="d-flex item">
+    <div class="image" data-aos="fade" style="background-image: url({{meals_details.image.url}});"></div>
+    <div class="text">
+        <h3>{{meals_details.name}}</h3>
+        <p> {{meals_details.description}}</p>
+        <p class="price">${{meals_details.price}}</p>
+    </div>
+</div> <!-- .item -->
+
+{% endblock content %}

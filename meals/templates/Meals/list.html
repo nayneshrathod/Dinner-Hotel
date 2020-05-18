@@ -1,0 +1,10 @@
+{% extends 'Base.html'%}
+
+{% block Specialties %}
+
+{% for h in mlist %}
+    <a href="{%  url 'meals:meals_details' h.slug %}">
+        {{ h }}
+    </a>
+{% endfor %}
+{% endblock Specialties %}
